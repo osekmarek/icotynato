@@ -33,10 +33,17 @@ body .card .text {
   text-shadow: 2px 2px 6px black;
   overflow: hidden;
 }
+@media (max-width: 720px) {
+  body .card .text {
+    font-size: 22px;
+    top: 45px;
+    left: 55px;
+  }
+}
 body .card .text::before {
   position: absolute;
   left: 0;
-  content: "wstajemy już po 10";
+  content: "wstajemy już po 11";
   -webkit-animation: dateBefore 2s 6s both;
           animation: dateBefore 2s 6s both;
 }
@@ -100,8 +107,23 @@ body .card h1 span:nth-child(8) {
   -webkit-animation: textAnime 2s 4.5s both;
           animation: textAnime 2s 4.5s both;
 }
+@media (max-width: 720px) {
+  body .card h1 {
+    top: 15px;
+    left: 30px;
+  }
+  body .card h1 span {
+    font-size: 25px;
+  }
+}
 body .card h1:nth-child(3) {
   left: 330px;
+}
+@media (max-width: 720px) {
+  body .card h1:nth-child(3) {
+    left: 165px;
+    top: 15px;
+  }
 }
 
 @-webkit-keyframes move {
