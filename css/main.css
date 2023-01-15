@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
   margin: 0;
@@ -35,7 +36,7 @@ body .card .text {
 body .card .text::before {
   position: absolute;
   left: 0;
-  content: "5 stycznia 2023 r.";
+  content: "wstajemy już po 10";
   -webkit-animation: dateBefore 2s 6s both;
           animation: dateBefore 2s 6s both;
 }
@@ -98,6 +99,9 @@ body .card h1 span:nth-child(7) {
 body .card h1 span:nth-child(8) {
   -webkit-animation: textAnime 2s 4.5s both;
           animation: textAnime 2s 4.5s both;
+}
+body .card h1:nth-child(3) {
+  left: 330px;
 }
 
 @-webkit-keyframes move {
